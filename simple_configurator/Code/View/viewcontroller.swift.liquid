@@ -1,0 +1,28 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+
+class {{ module_info.name }}ViewController: UIViewController {
+
+    var presenter: {{ module_info.name }}PresenterProtocol!
+    private var configurator: {{ module_info.name }}ConfiguratorProtocol = {{ module_info.name }}Configurator()
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        configurator.configure(with: self)
+        setupInitialState()
+    }
+}
+
+extension {{ module_info.name }}ViewController {
+
+   private func setupInitialState() {
+
+    }
+}
